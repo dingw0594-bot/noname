@@ -2,10 +2,16 @@
   "imports": {
     "express": "https://esm.sh/express@4.21.2",
     "minimist": "https://esm.sh/minimist@1.2.8",
-    "body-parser": "https://esm.sh/body-parser@1.20.3"
+    "body-parser": "https://esm.sh/body-parser@1.20.3",
+    "ws": "https://esm.sh/ws@8.14.0",
+    "chalk": "https://esm.sh/chalk@5.3.0"
   },
   "tasks": {
     "start": "deno run --unstable-detect-cjs --allow-write --allow-read --allow-net --allow-env noname-server.js",
-    "watch": "deno run --unstable-detect-cjs --allow-write --allow-read --allow-net --allow-env --watch noname-server.js"
+    "watch": "deno run --unstable-detect-cjs --allow-write --allow-read --allow-net --allow-env --watch noname-server.js",
+    "cli-server": "deno run --unstable-detect-cjs --allow-write --allow-read --allow-net --allow-env cli/cli-server.js",
+    "cli-client": "deno run --unstable-detect-cjs --allow-write --allow-read --allow-net --allow-env cli/cli-client.js",
+    "cli-start": "deno run --unstable-detect-cjs --allow-write --allow-read --allow-net --allow-env cli/start.js",
+    "cli-test": "deno run --unstable-detect-cjs --allow-write --allow-read --allow-net --allow-env cli/test/cli-test.js"
   }
 }
